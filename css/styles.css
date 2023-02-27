@@ -1263,6 +1263,9 @@ ol {
 
   color: var(--secondary-txt-cl);
 }
+.mobile-link-active {
+  color: var(--accent-txt-cl);
+}
 .mobile-menu-item:hover .mobile-menu-link,
 .mobile-menu-item:focus .mobile-menu-link {
   color: var(--link-hover-txt-cl);
@@ -1318,7 +1321,7 @@ ol {
 }
 .menu-socials-link:hover,
 .menu-socials-link:focus {
-  background-color: var(--active-btn-bg-cl);
+  background-color: var(--link-hover-txt-cl);
 }
 .menu-socials-icon {
   width: 24px;
