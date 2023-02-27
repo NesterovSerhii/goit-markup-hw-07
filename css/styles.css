@@ -77,9 +77,6 @@ ol {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -873,7 +870,7 @@ ol {
   color: var(--light-theme-btn-txt-cl);
   background-color: var(--light-bg-cl);
 
-  padding: 8px 16px;
+  padding: 12px 24px;
 
   transition: background-color var(--fast-anim), color var(--fast-anim),
     border-color var(--fast-anim), box-shadow var(--fast-anim);
@@ -905,6 +902,7 @@ ol {
   position: relative;
 }
 .project-card-img {
+  min-width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -954,7 +952,7 @@ ol {
     margin-bottom: 64px;
   }
   .row-list {
-    justify-content: center;
+    justify-content: start;
     gap: 72px 24px;
   }
   .row-items {
@@ -1299,6 +1297,8 @@ ol {
   align-items: start;
   justify-content: start;
   gap: 56px;
+
+  width: 100%;
 }
 .menu-socials-item {
   width: 40px;
@@ -1321,5 +1321,7 @@ ol {
   background-color: var(--active-btn-bg-cl);
 }
 .menu-socials-icon {
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }

@@ -140,7 +140,11 @@
           <ul class="activities-list list">
             <li class="activities">
               <img
-                src="./images/what-are-we-doing/desktop-application.jpg"
+                srcset="
+                  ./images/what-are-we-doing/img-1_@1x.jpg 1x,
+                  ./images/what-are-we-doing/img-1_@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/img-1_@1x.jpg"
                 alt="desktop application"
                 width="360"
                 height="300"
@@ -148,7 +152,11 @@
             </li>
             <li class="activities">
               <img
-                src="./images/what-are-we-doing/cellphone.jpg"
+                srcset="
+                  ./images/what-are-we-doing/img-2_@1x.jpg 1x,
+                  ./images/what-are-we-doing/img-2_@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/img-2_@1x.jpg"
                 alt="cellphone"
                 width="360"
                 height="300"
@@ -156,7 +164,11 @@
             </li>
             <li class="activities">
               <img
-                src="./images/what-are-we-doing/mobile-application.jpg"
+                srcset="
+                  ./images/what-are-we-doing/img-3_@1x.jpg 1x,
+                  ./images/what-are-we-doing/img-3_@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/img-3_@1x.jpg"
                 alt="mobile aplication"
                 width="360"
                 height="300"
@@ -173,7 +185,10 @@
             <li class="list-item">
               <img
                 class="team-card-photo"
-                srcset="./images/employees/mark-guerrero_@1x.jpg 1x, ./images/employees/mark-guerrero_@2x.jpg 2x"
+                srcset="
+                  ./images/employees/mark-guerrero_@1x.jpg 1x,
+                  ./images/employees/mark-guerrero_@2x.jpg 2x
+                "
                 src="./images/employees/mark-guerrero_@1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -242,7 +257,10 @@
             <li class="list-item">
               <img
                 class="team-card-photo"
-                srcset="./images/employees/tom-ford_@1x.jpg 1x, ./images/employees/tom-ford_@2x.jpg 2x"
+                srcset="
+                  ./images/employees/tom-ford_@1x.jpg 1x,
+                  ./images/employees/tom-ford_@2x.jpg 2x
+                "
                 src="./images/employees/mark-guerrero_@1x.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -311,7 +329,10 @@
             <li class="list-item">
               <img
                 class="team-card-photo"
-                srcset="./images/employees/camila-garcia_@1x.jpg 1x, ./images/employees/camila-garcia_@2x.jpg 2x"
+                srcset="
+                  ./images/employees/camila-garcia_@1x.jpg 1x,
+                  ./images/employees/camila-garcia_@2x.jpg 2x
+                "
                 src="./images/employees/camila-garcia_@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -380,7 +401,10 @@
             <li class="list-item">
               <img
                 class="team-card-photo"
-                srcset="./images/employees/daniel-wilson_@1x.jpg 1x, ./images/employees/daniel-wilson_@2x.jpg 2x"
+                srcset="
+                  ./images/employees/daniel-wilson_@1x.jpg 1x,
+                  ./images/employees/daniel-wilson_@2x.jpg 2x
+                "
                 src="./images/employees/daniel-wilson_@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -720,8 +744,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-close-btn js-close-menu">
         <svg class="mobile-close-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
 
@@ -737,73 +760,73 @@
         </li>
       </ul>
       <address class="menu-contacts">
-          <ul class="menu-contact-list list">
-            <li class="menu-list-item">
-              <a class="menu-phone-number link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-mail link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <ul class="menu-socials list">
-            <li class="menu-socials-item">
-              <a
-                class="menu-socials-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram link"
-              >
-                <svg class="menu-socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-socials-item">
-              <a
-                class="menu-socials-link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter link"
-              >
-                <svg class="menu-socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-socials-item">
-              <a
-                class="menu-socials-link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook link"
-              >
-                <svg class="menu-socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-socials-item">
-              <a
-                class="menu-socials-link"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Linkedin link"
-              >
-                <svg class="menu-socials-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <ul class="menu-contact-list list">
+          <li class="menu-list-item">
+            <a class="menu-phone-number link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="menu-socials list">
+        <li class="menu-socials-item">
+          <a
+            class="menu-socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram link"
+          >
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a
+            class="menu-socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter link"
+          >
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a
+            class="menu-socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook link"
+          >
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a
+            class="menu-socials-link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin link"
+          >
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- JAVA SCRIPT -->
