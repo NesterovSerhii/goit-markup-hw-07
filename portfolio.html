@@ -30,12 +30,10 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link link current" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link current" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
@@ -56,12 +54,22 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle" width="32px" height="22px">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <section class="section">
+      <section class="portfolio-projects-section">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="filter-list list">
@@ -98,8 +106,10 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Banking App Interface Concept</h2>
-                  <p class="description">App</p>
+                  <h2 class="project-card-subtitle">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="project-card-type">App</p>
                 </div>
               </a>
             </li>
@@ -119,8 +129,8 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Cashless Payment</h2>
-                  <p class="description">Marketing</p>
+                  <h2 class="project-card-subtitle">Cashless Payment</h2>
+                  <p class="project-card-type">Marketing</p>
                 </div>
               </a>
             </li>
@@ -140,8 +150,8 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Meditaion App</h2>
-                  <p class="description">App</p>
+                  <h2 class="project-card-subtitle">Meditaion App</h2>
+                  <p class="project-card-type">App</p>
                 </div>
               </a>
             </li>
@@ -161,8 +171,8 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Taxi Service</h2>
-                  <p class="description">Marketing</p>
+                  <h2 class="project-card-subtitle">Taxi Service</h2>
+                  <p class="project-card-type">Marketing</p>
                 </div>
               </a>
             </li>
@@ -182,8 +192,8 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Screen Illustrations</h2>
-                  <p class="description">Design</p>
+                  <h2 class="project-card-subtitle">Screen Illustrations</h2>
+                  <p class="project-card-type">Design</p>
                 </div>
               </a>
             </li>
@@ -203,8 +213,8 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Online Courses</h2>
-                  <p class="description">Marketing</p>
+                  <h2 class="project-card-subtitle">Online Courses</h2>
+                  <p class="project-card-type">Marketing</p>
                 </div>
               </a>
             </li>
@@ -224,8 +234,10 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Instagram Stories Concept</h2>
-                  <p class="description">Design</p>
+                  <h2 class="project-card-subtitle">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="project-card-type">Design</p>
                 </div>
               </a>
             </li>
@@ -245,8 +257,8 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Organic Food</h2>
-                  <p class="description">Web Site</p>
+                  <h2 class="project-card-subtitle">Organic Food</h2>
+                  <p class="project-card-type">Web Site</p>
                 </div>
               </a>
             </li>
@@ -266,8 +278,8 @@
                   </div>
                 </div>
                 <div class="card-content-wrapper">
-                  <h2 class="subtitle">Fresh Coffee</h2>
-                  <p class="description">Web Site</p>
+                  <h2 class="project-card-subtitle">Fresh Coffee</h2>
+                  <p class="project-card-type">Web Site</p>
                 </div>
               </a>
             </li>
@@ -278,7 +290,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container container">
-        <div class="footer-lesf-side">
+        <div class="footer-left-side">
           <a class="logo footer-logo link" href="./index.html"
             >web<span class="footer-logo-accent">studio</span></a
           >
@@ -364,5 +376,40 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+    </div>
+
+    <!-- JAVA SCRIPT -->
+    <script defer src="js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
