@@ -244,6 +244,10 @@ ol {
   background-color: var(--active-btn-bg-cl);
 }
 @media screen and (max-width: 767px) {
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .header-list {
     display: none;
   }
@@ -996,6 +1000,8 @@ ol {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 
+  overflow-y: scroll;
+
   transition: opacity var(--fast-anim) б visibility var(--fast-anim);
 }
 
@@ -1016,7 +1022,9 @@ ol {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 392px;
+  width: 100%;
+  max-width: 392px;
+  min-width: 320px;
   min-height: 576px;
   padding: 72px 24px 24px;
   border: none;
@@ -1173,8 +1181,6 @@ ol {
   border: none;
 }
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1201,17 +1207,18 @@ ol {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
-  padding-right: 35px;
+  padding-bottom: 40px;
   background-color: var(--primary-bg-cl);
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform var(--fast-anim);
+  overflow-y: scroll;
 }
 
 .menu-container.is-open {
@@ -1227,7 +1234,7 @@ ol {
 
 .mobile-menu {
   padding: 0;
-  margin-bottom: 284px;
+  margin-bottom: auto;
   list-style: none;
 }
 .menu-close-btn {
@@ -1251,6 +1258,11 @@ ol {
 }
 .mobile-close-btn-icon {
   color: currentColor;
+}
+.mobile-menu-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 40px;
@@ -1303,16 +1315,20 @@ ol {
 
   width: 100%;
 }
-.menu-socials-item {
-  width: 40px;
-  height: 40px;
+@media screen and (max-width: 428px) {
+  .menu-phone-number {
+    font-size: calc(26px + (36 - 26) * ((100vw - 320px) / (428 - 320)));
+  }
+  .menu-socials {
+    gap: calc(35px + (56 - 35) * ((100vw - 320px) / (428 - 320)));
+  }
 }
 .menu-socials-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   background-color: var(--hero-btn-bg-cl);
   border-radius: 50%;
   color: var(--icon-text-fill-cl);
