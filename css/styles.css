@@ -658,8 +658,8 @@ ol {
   background-color: var(--secondary-bg-cl);
 }
 .footer-container {
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -813,9 +813,10 @@ ol {
     padding-bottom: 100px;
   }
   .footer-container {
-    position: relative;
-    display: flex;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 0;
   }
   .footer-left-side {
     margin-right: 120px;
@@ -824,14 +825,10 @@ ol {
     margin-right: 80px;
   }
   .subscribe-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer-subscribe-field {
-    margin-right: 24px;
+    flex-wrap: nowrap;
   }
   .footer-subscribe-input {
+    min-width: 264px;
     width: 264px;
     height: 40px;
     padding-left: 16px;
